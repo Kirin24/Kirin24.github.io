@@ -80,7 +80,7 @@ li {
 }
 
 .text--purple {
-  color: #6030b1;
+  color: #0019fd;
 }
 
 section:nth-child(even) {
@@ -90,6 +90,31 @@ section:nth-child(even) {
 .section__title {
   margin-bottom: 20px;
 }
+/* POPUP MESSAGE */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 
 /* NAVIGATION BAR */
 
@@ -115,7 +140,7 @@ nav {
 }
 
 .nav__link--anchor-primary {
-  background-color: #6030b1;
+  background-color: #0019fd;
   padding: 8px 20px;
   border-radius: 50px;
   color: white;
@@ -123,18 +148,23 @@ nav {
 }
 
 .nav__link--anchor-primary:hover {
-  background-color: #5d3eff;
+  background-color: #3e51ff;
 }
 
 .personal__logo {
   font-size: 24px;
-  color: #6030b1;
+  color: #0019fd;
   margin: 0 12px;
   font-weight: bold
 }
 
 /* ABOUT ME */
-
+.about-me{
+  background-color: #f5f5f5;
+}
+.about-me2{
+  background-color: #e8e8e8;
+}
 #about-me {
   min-height: 100vh;
   display: flex;
@@ -253,7 +283,9 @@ nav {
 }
 
 /* TECH - STACK */
-
+.tech{
+  background-color: #f0f0f0;
+}
 .language__img {
   width: 100%;
   max-width: 100px;
@@ -300,6 +332,9 @@ nav {
 
 /* PROJECTS */
 
+.pro{
+  background-color: #f5f5f5;
+}
 .project {
   margin-bottom: 135px;
 }
